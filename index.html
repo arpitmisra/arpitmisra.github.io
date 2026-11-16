@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08090b">
+<meta name="description" content="Arpit’s portfolio — exploring AI, machine learning, blockchain and Web3. Discover projects, education, and contact details.">
+<meta property="og:title" content="Arpit — AI / ML &amp; Web3">
+<meta property="og:description" content="Curiosity into code. Explore Arpit’s projects and engineering interests.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://arpitmisra.github.io">
+<title>Arpit — AI / ML &amp; Web3</title></head><body>
+<style>
+#arpit-orbit{--bg:#08090b;--ink:#f2eff7;--muted:#a49caf;--purple:#bfa2f3;--green:#b6f776;--stage:680px;color-scheme:dark;color:var(--ink);font:14px/1.6 'Segoe UI',Arial,sans-serif;position:relative;background:var(--bg);border:1px solid #26232d;border-radius:10px;isolation:isolate}
+#arpit-orbit *{box-sizing:border-box}
+#arpit-orbit button,#arpit-orbit a{-webkit-tap-highlight-color:transparent}
+#arpit-orbit button{font:inherit;color:inherit}
+#arpit-orbit button:focus-visible,#arpit-orbit a:focus-visible{outline:2px solid var(--green);outline-offset:5px}
+#arpit-orbit h1,#arpit-orbit h2,#arpit-orbit h3,#arpit-orbit p{margin:0}
+#arpit-orbit .viewport{height:var(--stage);overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;scrollbar-width:thin;scrollbar-color:#494052 #08090b;border-radius:10px}
+#arpit-orbit .journey{height:2280px;position:relative}
+#arpit-orbit .scene{height:var(--stage);position:sticky;top:0;overflow:hidden;background:#08090b;perspective:1200px}
+#arpit-orbit .scene:before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 48%,#38204c3d,transparent 48%),linear-gradient(0deg,#110d151f,transparent 70%)}
+#arpit-orbit .topbar{position:absolute;z-index:6;inset:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:23px 30px 18px;border-bottom:1px solid #ffffff09;background:linear-gradient(#08090bf5,#08090b00);padding-right:105px}
+#arpit-orbit .wordmark{font-size:16px;font-weight:600;letter-spacing:-.7px;white-space:nowrap}
+#arpit-orbit .wordmark span{color:var(--green)}
+#arpit-orbit .quick-nav{display:flex;gap:20px;flex-wrap:wrap;justify-content:flex-end}
+#arpit-orbit .quick-nav button{padding:3px 0;background:none;border:0;color:#b1a9bd;font-size:11px;transition:color .2s}
+#arpit-orbit .quick-nav button:hover{color:#e4d3fb}
+#arpit-orbit .intro{position:absolute;top:104px;left:22px;right:22px;text-align:center;pointer-events:none;z-index:2;will-change:transform,opacity}
+#arpit-orbit .eyebrow{font:10px/1.7 ui-monospace,Consolas,monospace;letter-spacing:2.8px;text-transform:uppercase;color:#a48dbb}
+#arpit-orbit .intro h2{font:400 26px/1.4 Georgia,'Times New Roman',serif;letter-spacing:-.6px;color:#e6dfef;margin-top:12px}
+#arpit-orbit .intro h2 em{font-weight:400;color:#bda0df}
+#arpit-orbit .chapter-label{position:absolute;left:20px;right:20px;top:112px;text-align:center;opacity:0;color:#a59aaf;font:11px/1.6 ui-monospace,Consolas,monospace;letter-spacing:2px;text-transform:uppercase}
+#arpit-orbit .core{position:absolute;left:50%;top:49%;width:300px;height:300px;transform:translate(-50%,-50%);z-index:3;pointer-events:none;will-change:transform}
+#arpit-orbit .sculpture{position:absolute;inset:0;transform-style:preserve-3d;will-change:transform}
+#arpit-orbit .rim{position:absolute;inset:12px;border-radius:50%;background:conic-gradient(from 20deg,#211526 0deg,#b8a4ce 31deg,#382743 65deg,#160e1a 98deg,#51425c 160deg,#a88ac3 198deg,#30223b 230deg,#18121e 265deg,#584067 320deg,#211526 360deg);box-shadow:inset 0 1px 2px #d4bdea5c,0 18px 35px #0007,0 0 45px #7332a315;transform:rotateX(32deg) rotateY(-16deg);}
+#arpit-orbit .rim:before{content:'';position:absolute;inset:12px;border-radius:50%;background:radial-gradient(ellipse at 50% 32%,#19121f,#08090b 74%);border:1px solid #6d4d8580;box-shadow:inset 0 4px 12px #000b}
+#arpit-orbit .rim:after{content:'';position:absolute;inset:-9px;border-radius:50%;border:1px solid #7f5f8b24;border-top-color:#ab86c35c;border-left-color:transparent}
+#arpit-orbit .orbit-line{position:absolute;inset:-18px;border:1px solid #76558236;border-radius:50%;transform:rotateX(58deg) rotateY(-16deg) rotateZ(-28deg)}
+#arpit-orbit .orbit-line:after{content:'';position:absolute;left:21%;top:7%;width:5px;height:5px;border-radius:50%;background:var(--green);box-shadow:0 0 12px #b6f73555}
+#arpit-orbit .identity{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:7px;text-align:center}
+#arpit-orbit h1{font:400 67px/1.15 Georgia,'Times New Roman',serif;letter-spacing:-4px;text-shadow:0 2px 20px #000;color:#eee8f5}
+#arpit-orbit .identity .discipline{font:10px/1.6 ui-monospace,Consolas,monospace;letter-spacing:2px;color:#ae9fbd;margin-top:7px}
+#arpit-orbit .orbit-card{position:absolute;left:50%;top:49%;width:218px;min-height:132px;text-align:left;border:1px solid #57426866;border-radius:14px;background:linear-gradient(130deg,#22182be8,#100e15f8 80%);box-shadow:0 14px 35px #0005,inset 0 1px 0 #c7a5f411;padding:19px 21px;z-index:4;opacity:0;visibility:hidden;transform:translate(-50%,-50%) scale(.75);will-change:transform,opacity;backdrop-filter:blur(18px)}
+#arpit-orbit .orbit-card:before{content:'';position:absolute;inset:0;border-radius:inherit;background:radial-gradient(ellipse at 0 0,#9364b924,transparent 65%);opacity:0;transition:opacity .25s;pointer-events:none}
+#arpit-orbit .orbit-card:hover:before,#arpit-orbit .orbit-card:focus-visible:before{opacity:1}
+#arpit-orbit .orbit-card:hover{border-color:#a981cc8a;box-shadow:0 14px 35px #0006,0 0 24px #9153bd13}
+#arpit-orbit .orbit-card .card-number{font:10px/1.6 ui-monospace,Consolas,monospace;letter-spacing:1.5px;color:#a48eb6;display:block;margin-bottom:11px;padding-right:16px}
+#arpit-orbit .orbit-card .card-title{font-size:20px;font-weight:500;letter-spacing:-.5px;display:block;line-height:1.4}
+#arpit-orbit .orbit-card .card-caption{font-size:11px;color:#aaa0b5;display:block;margin-top:5px}
+#arpit-orbit .orbit-card .card-arrow{position:absolute;right:19px;top:18px;font-size:14px;color:#b6f776b8;transition:transform .25s}
+#arpit-orbit .orbit-card:hover .card-arrow{transform:translate(2px,-2px)}
+#arpit-orbit .floor{position:absolute;left:50%;top:49%;width:580px;height:390px;border:1px solid #5e3f7629;border-radius:50%;transform:translate(-50%,-50%) rotate(-15deg);pointer-events:none;opacity:0}
+#arpit-orbit .bottom{position:absolute;bottom:26px;left:30px;right:30px;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:14px}
+#arpit-orbit .hint{font:11px/1.6 ui-monospace,Consolas,monospace;letter-spacing:.5px;color:#9f93af;min-width:0}
+#arpit-orbit .hint span{color:var(--green)}
+#arpit-orbit .reveal-button{font-size:11px;color:#d9c7ea;background:#21162c;border:1px solid #59416d;border-radius:30px;padding:10px 17px;white-space:nowrap;transition:background .2s}
+#arpit-orbit .reveal-button:hover{background:#32213f}
+#arpit-orbit .progress-track{height:1px;background:#302535;position:absolute;bottom:0;left:0;right:0}
+#arpit-orbit .progress-fill{height:100%;width:0;background:linear-gradient(90deg,#775297,#bda0d7);transform-origin:left}
+#arpit-orbit dialog{color-scheme:dark;color:#eee7f5;border:1px solid #59416c;border-radius:18px;padding:0;width:min(620px,calc(100% - 32px));max-height:calc(100% - 50px);background:#100d15;box-shadow:0 36px 120px #000b;overflow:auto;scrollbar-width:thin;scrollbar-color:#5e4772 #100d15;font:14px/1.65 'Segoe UI',Arial,sans-serif;margin:auto}
+#arpit-orbit dialog::backdrop{background:#040407c9;backdrop-filter:blur(10px)}
+#arpit-orbit .detail-head{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:21px 28px;border-bottom:1px solid #33263e;position:sticky;top:0;background:#100d15f5;z-index:1}
+#arpit-orbit .detail-kicker{font:10px/1.6 ui-monospace,Consolas,monospace;letter-spacing:1.8px;text-transform:uppercase;color:#b69bcb}
+#arpit-orbit .close-panel{border:1px solid #4b365a;background:#201626;border-radius:24px;font-size:11px;padding:9px 13px;white-space:nowrap}
+#arpit-orbit .close-panel:hover{background:#302039}
+#arpit-orbit .detail-body{padding:26px 28px 30px}
+#arpit-orbit .detail-body h2{font:400 37px/1.2 Georgia,'Times New Roman',serif;letter-spacing:-1px;margin:0 0 12px}
+#arpit-orbit .detail-body .lede{font-size:14px;color:#b5a7c1;line-height:1.8;margin-bottom:24px}
+#arpit-orbit .detail-body h3{font-size:18px;font-weight:500;letter-spacing:-.3px;margin-bottom:7px;color:#f0e8f7}
+#arpit-orbit .detail-body p{font-size:13px;line-height:1.8;color:#b9aec4}
+#arpit-orbit .project-detail{padding:23px 0;border-top:1px solid #35263f}
+#arpit-orbit .project-detail .tag{font:10px/1.6 ui-monospace,Consolas,monospace;letter-spacing:1px;color:#b897d0;text-transform:uppercase;margin-bottom:8px}
+#arpit-orbit .detail-body a{color:#c5e7a2;text-decoration:none;font-size:12px;display:inline-block;margin-top:12px;text-underline-offset:4px}
+#arpit-orbit .detail-body a:hover{text-decoration:underline}
+#arpit-orbit .detail-body .tech{font:11px/1.7 ui-monospace,Consolas,monospace;color:#9f90ab;margin-top:11px}
+#arpit-orbit .draft-note{padding:16px 0 0;border-top:1px solid #35263f;color:#ad9db7;font-size:13px;line-height:1.8}
+#arpit-orbit .draft-label{display:inline-block;color:#c6a4df;font:10px/1.7 ui-monospace,Consolas,monospace;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:10px}
+#arpit-orbit .facts{margin:0}
+#arpit-orbit .facts div{display:grid;grid-template-columns:125px 1fr;gap:15px;padding:14px 0;border-bottom:1px solid #302239}
+#arpit-orbit .facts dt{font-size:12px;color:#a18eaf}
+#arpit-orbit .facts dd{margin:0;font-size:13px;color:#d3c7dd}
+#arpit-orbit .contact-link{display:flex!important;justify-content:space-between;gap:8px 15px;flex-wrap:wrap;padding:18px 0;border-top:1px solid #35263f;overflow-wrap:anywhere}
+#arpit-orbit .placeholder{color:#b298c6;font-style:italic}
+#arpit-orbit .contact-link span:first-child{color:#d5c6e1}
+#arpit-orbit .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#arpit-orbit.no-motion .journey{height:var(--stage)}
+@media(max-width:800px){#arpit-orbit .orbit-card{width:185px;padding:17px;min-height:126px}#arpit-orbit .orbit-card .card-title{font-size:18px}#arpit-orbit .topbar{padding-left:24px}#arpit-orbit .quick-nav{gap:14px}}
+@media(max-width:580px){#arpit-orbit{--stage:700px}#arpit-orbit .topbar{padding:20px 20px 12px;display:block;padding-right:80px}#arpit-orbit .quick-nav{justify-content:flex-start;gap:14px;margin-top:12px}#arpit-orbit .quick-nav button{font-size:11px;padding:5px 0}#arpit-orbit .intro{top:118px}#arpit-orbit .intro h2{font-size:21px}#arpit-orbit .eyebrow{font-size:10px;letter-spacing:1.6px}#arpit-orbit .chapter-label{top:129px;font-size:10px}#arpit-orbit .orbit-card{width:calc(50% - 28px);min-height:118px;padding:15px}#arpit-orbit .orbit-card .card-title{font-size:17px}#arpit-orbit .orbit-card .card-caption{font-size:11px}#arpit-orbit .orbit-card .card-number{margin-bottom:8px}#arpit-orbit .orbit-card .card-arrow{right:13px;top:13px}#arpit-orbit .bottom{left:20px;right:20px;bottom:22px}#arpit-orbit .hint{font-size:10px;max-width:155px}#arpit-orbit .reveal-button{font-size:10px;padding:9px 12px}#arpit-orbit .floor{width:340px;height:350px}#arpit-orbit .detail-head{padding:17px 20px}#arpit-orbit .detail-body{padding:24px 20px}#arpit-orbit .detail-body h2{font-size:32px}#arpit-orbit .facts div{grid-template-columns:1fr;gap:5px}}
+@media(max-width:400px){#arpit-orbit .topbar{padding-right:20px}#arpit-orbit .quick-nav{gap:12px}#arpit-orbit .orbit-card{width:calc(50% - 22px);padding:14px 12px}#arpit-orbit .orbit-card .card-number{letter-spacing:.5px;padding-right:12px}#arpit-orbit .orbit-card .card-caption{line-height:1.5}}
+@media(pointer:coarse){#arpit-orbit .quick-nav button,#arpit-orbit .close-panel,#arpit-orbit .reveal-button{min-height:44px}}
+@media(prefers-reduced-motion:reduce){#arpit-orbit *,#arpit-orbit *:before,#arpit-orbit *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+#arpit-orbit{--green:#bbff72}
+#arpit-orbit .journey{height:4400px}
+#arpit-orbit .topbar{background:#090a0ded;backdrop-filter:blur(15px);border-bottom:1px solid #baff741c;min-height:75px;padding-right:100px}
+#arpit-orbit .quick-nav{gap:18px}
+#arpit-orbit .quick-nav button{font-size:12px}
+
+#arpit-orbit h1{font-family:'Segoe UI',Arial,sans-serif;font-weight:850;line-height:1;letter-spacing:-6px;background:linear-gradient(90deg,#bbff72,#eee8f5);background-clip:text;-webkit-background-clip:text;color:transparent;text-shadow:none;animation:aj-name-in .9s cubic-bezier(.16,1,.3,1) both}
+#arpit-orbit .core .identity{padding:0}
+#arpit-orbit .intro{top:126px}
+#arpit-orbit .intro h2{font:400 20px/1.5 'Segoe UI',Arial,sans-serif;color:#c7bacf;letter-spacing:-.4px}
+#arpit-orbit .intro .eyebrow{color:var(--green);font-size:11px}
+#arpit-orbit .opening-caption{position:absolute;top:67%;left:30px;right:30px;text-align:center;font:14px/1.8 'Segoe UI',Arial,sans-serif;color:#b9adc3;pointer-events:none}
+#arpit-orbit .opening-caption span{color:var(--green)}
+#arpit-orbit .chapter-label{color:#baff72;top:124px}
+#arpit-orbit .orbit-line{border-color:#baff743c}
+#arpit-orbit .orbit-card{border-color:#a58ab04f;border-top:2px solid #baff7480}
+#arpit-orbit .orbit-card:hover{border-color:#bbff7290;box-shadow:0 12px 35px #0006,0 0 25px #baff7410}
+#arpit-orbit .orbit-card .card-number{color:#b8d29c}
+#arpit-orbit .orbit-card .card-arrow{color:var(--green)}
+#arpit-orbit .reveal-button{color:#11170b;background:var(--green);border-color:var(--green);font-weight:600}
+#arpit-orbit .reveal-button:hover{background:#d5ffa7}
+#arpit-orbit .progress-track{position:absolute;z-index:8}
+#arpit-orbit .progress-fill{background:linear-gradient(90deg,#8452ab,#bbff72)}
+#arpit-orbit .story-section{position:relative;padding:94px 56px 70px;background:#0a0a0e;scroll-margin-top:74px;border-top:1px solid #372640}
+#arpit-orbit .section-overline{font:11px/1.8 ui-monospace,Consolas,monospace;color:var(--green);letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+#arpit-orbit .story-section h2{font:400 48px/1.13 Georgia,serif;color:#e7d9f3;letter-spacing:-1.7px;max-width:650px;margin-bottom:20px}
+#arpit-orbit .story-section h2 em{font-weight:400;color:var(--green)}
+#arpit-orbit .section-intro{font-size:15px;color:#b6a8c1;max-width:580px;line-height:1.8;margin-bottom:42px}
+#arpit-orbit .showcase{display:grid;grid-template-columns:1.1fr 1fr;gap:38px;align-items:center;padding:56px 0;border-top:1px solid #392a44;min-height:450px}
+#arpit-orbit .showcase h3{font:500 29px/1.2 'Segoe UI',Arial,sans-serif;letter-spacing:-.8px;color:#f0e7f7;margin:14px 0}
+#arpit-orbit .showcase p{color:#bcb0c6;font-size:14px;line-height:1.8}
+#arpit-orbit .showcase .tech-line{font:11px/1.8 ui-monospace,Consolas,monospace;color:#ad93c2;margin:15px 0 20px}
+#arpit-orbit .text-action{display:inline-block;background:none;border:0;border-bottom:1px solid #baff7460;padding:8px 0;color:var(--green);font-size:13px;text-decoration:none}
+#arpit-orbit .text-action:hover{color:#dbffb0;border-color:#dbffb0}
+#arpit-orbit .visual-box{position:relative;min-height:290px;border-radius:18px;border:1px solid #573b6a;background:radial-gradient(ellipse at 50% 70%,#43215d55,transparent 70%),#120f18;padding:28px;overflow:hidden}
+#arpit-orbit .visual-caption{font:10px/1.8 ui-monospace,Consolas,monospace;letter-spacing:1.5px;color:#b4a3bf;text-transform:uppercase}
+#arpit-orbit .pipeline{display:flex;flex-direction:column;gap:22px;margin-top:20px;position:relative}
+#arpit-orbit .pipeline:before{content:'';position:absolute;left:14px;top:16px;bottom:16px;width:1px;background:linear-gradient(#bbff72 var(--scan,0%),#523365 var(--scan,0%))}
+#arpit-orbit .pipeline span{display:flex;align-items:center;gap:16px;font-size:13px;color:#d6c7df;position:relative}
+#arpit-orbit .pipeline b{display:grid;place-items:center;width:29px;height:29px;border-radius:50%;font:11px/1 ui-monospace,monospace;border:1px solid #a9dd6a;background:#12170f;color:#bbff72}
+#arpit-orbit .visual-footer{font:11px/1.7 ui-monospace,Consolas,monospace;color:#a693b5;margin-top:24px}
+#arpit-orbit .patch-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;margin-top:20px;transform:perspective(600px) rotateX(var(--tilt,12deg));transform-origin:center;transition:transform .15s}
+#arpit-orbit .patch-grid span{aspect-ratio:1;background:#32213e;border:1px solid #76528a55;border-radius:3px;transition:background .3s,border-color .3s}
+#arpit-orbit .patch-grid span.lit{background:#93c95588;border-color:#c5ff8c}
+#arpit-orbit .patch-grid span:nth-child(3n){background:#57316b}
+#arpit-orbit .patch-grid span.lit:nth-child(3n){background:#baff7288}
+#arpit-orbit .reveal-on-scroll{opacity:0;transform:translateY(45px);transition:opacity .85s ease,transform .85s cubic-bezier(.16,1,.3,1)}
+#arpit-orbit .reveal-on-scroll.shown{opacity:1;transform:translateY(0)}
+#arpit-orbit .foundations{background:linear-gradient(130deg,#140f1c,#080a0b)}
+#arpit-orbit .foundation-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;margin-top:42px}
+#arpit-orbit .foundation-grid article{border-top:2px solid #baff746a;padding-top:22px}
+#arpit-orbit .foundation-grid h3{font-size:20px;font-weight:500;margin-bottom:12px}
+#arpit-orbit .foundation-grid p{color:#b8a9c5;font-size:14px;line-height:1.8}
+#arpit-orbit .foundation-grid small{display:block;color:#b7ef86;margin-top:14px;font:11px/1.8 ui-monospace,monospace}
+#arpit-orbit .resume-section{display:grid;grid-template-columns:1.15fr 1fr;gap:45px;align-items:center;min-height:640px}
+#arpit-orbit .resume-sheet{border:1px solid #584768;background:#15121b;border-radius:6px;padding:30px;transform:rotate(3deg);box-shadow:0 25px 60px #0007;transition:transform .8s cubic-bezier(.16,1,.3,1)}
+#arpit-orbit .resume-sheet:hover{transform:rotate(0deg)}
+#arpit-orbit .resume-sheet .paper-name{font-size:31px;letter-spacing:-1px;font-weight:750;color:var(--green)}
+#arpit-orbit .resume-sheet .paper-role{font-size:11px;color:#c4b3d0;margin:4px 0 24px}
+#arpit-orbit .resume-sheet .paper-line{height:3px;background:#4e3c5d;margin:10px 0}
+#arpit-orbit .resume-sheet .paper-line.short{width:65%;background:#a1cc7059}
+#arpit-orbit .resume-sheet .paper-label{font:10px/1.8 ui-monospace,monospace;color:#b89ace;letter-spacing:1px;margin-top:22px}
+#arpit-orbit .resume-sheet .paper-copy{font-size:11px;line-height:1.8;color:#b9acc6;margin-top:5px}
+#arpit-orbit .actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:24px}
+#arpit-orbit .footer-contact{padding:50px 56px;background:#0c100b;border-top:1px solid #91bd5642}
+#arpit-orbit .footer-contact h2{font:400 36px/1.2 Georgia,serif;color:#d2eab8;margin-bottom:20px}
+#arpit-orbit .footer-contact a{color:#bbff72;text-decoration:none;font-size:13px;overflow-wrap:anywhere}
+#arpit-orbit .footer-contact .social-row{display:flex;gap:22px;flex-wrap:wrap;margin-top:25px}
+#arpit-orbit .footer-contact small{display:block;color:#92a382;margin-top:35px;font-size:11px}
+#arpit-orbit .resume-summary{white-space:pre-wrap;color:#bcb0c6;line-height:1.85;font-size:13px}
+#arpit-orbit .resume-notice{color:#b7a5c4;font-size:12px;line-height:1.7;margin-top:15px}
+#arpit-orbit .no-file{border:1px dashed #5c486d;padding:18px;border-radius:8px;margin-top:22px;color:#b8aac2;font-size:13px}
+#arpit-orbit .no-file strong{color:#c2e698;font-weight:500}
+#journey-controls{margin-top:16px}
+#journey-controls .controls-fields{display:grid;gap:16px;padding-top:16px}
+#journey-controls summary{color:inherit}
+#journey-controls label{display:grid;gap:6px}
+@keyframes aj-name-in{from{opacity:0;transform:translateY(25px) scale(.89)}to{opacity:1;transform:translateY(0) scale(1)}}
+#arpit-orbit.no-motion .journey{height:var(--stage)}
+#arpit-orbit.no-motion .reveal-on-scroll{opacity:1;transform:none}
+@media(max-width:700px){#arpit-orbit .story-section{padding:85px 26px 50px}#arpit-orbit .story-section h2{font-size:37px}#arpit-orbit .showcase{grid-template-columns:1fr;gap:26px;padding:37px 0}#arpit-orbit .visual-box{min-height:270px}#arpit-orbit .foundation-grid,#arpit-orbit .resume-section{grid-template-columns:1fr;gap:30px}#arpit-orbit .resume-sheet{max-width:390px;width:95%;margin:auto}#arpit-orbit .footer-contact{padding:44px 26px}#arpit-orbit .topbar{padding-right:85px}.controls-fields textarea{min-height:150px}}
+@media(max-width:580px){#arpit-orbit .topbar{display:flex;align-items:flex-start;padding:17px 18px 13px;gap:12px}#arpit-orbit .quick-nav{margin:0;gap:10px;justify-content:flex-end;max-width:220px}#arpit-orbit .quick-nav button{font-size:11px}#arpit-orbit .intro{top:142px}#arpit-orbit .intro h2{font-size:17px}#arpit-orbit .opening-caption{font-size:13px;left:25px;right:25px}#arpit-orbit .chapter-label{top:127px}#arpit-orbit h1{letter-spacing:-3px}}
+@media(max-width:400px){#arpit-orbit .topbar{padding-right:15px}.quick-nav button{font-size:10px}#arpit-orbit .quick-nav{gap:8px}#arpit-orbit .story-section{padding-left:20px;padding-right:20px}#arpit-orbit .story-section h2{font-size:32px}#arpit-orbit .showcase h3{font-size:25px}#arpit-orbit .resume-sheet{padding:22px}}
+
+html,body{margin:0;background:#08090b;color:#f2eff7;color-scheme:dark;font-family:'Segoe UI',Arial,sans-serif}
+html{scrollbar-width:thin}body{min-width:280px}.cursor-interaction{cursor:pointer}
+#arpit-orbit{border:0;border-radius:0;--stage:max(680px,100svh)}
+#arpit-orbit .viewport{border-radius:0}
+#arpit-orbit .topbar{padding-right:30px}
+@media(max-width:580px){#arpit-orbit{--stage:max(700px,100svh)}#arpit-orbit .topbar{padding-right:18px}}
+</style>
+<div id="arpit-orbit" aria-label="Arpit · Interactive portfolio concept">
+  <header class="topbar"><div class="wordmark">arpit<span>.</span></div><nav class="quick-nav" aria-label="Portfolio navigation"><button type="button" class="cursor-interaction" data-jump="orbit">Explore</button><button type="button" class="cursor-interaction" data-jump="work">Work</button><button type="button" class="cursor-interaction" data-open="resume">Résumé</button></nav></header>
+  <div class="viewport" role="region" aria-label="Scroll to reveal portfolio sections">
+    <div class="journey">
+      <main class="scene">
+        <div class="intro"><div class="eyebrow">AI / ML + Blockchain / Web3</div><h2>Curiosity into code.</h2></div>
+        <p class="opening-caption">Exploring intelligence. Building on-chain.<br><span>Scroll to enter my world.</span></p>
+        <div class="chapter-label" aria-hidden="true">Choose a chapter</div>
+        <div class="floor" aria-hidden="true"></div>
+        <div class="core"><div class="sculpture" aria-hidden="true"><div class="rim"></div><div class="orbit-line"></div></div><div class="identity"><h1>ARPIT</h1><div class="discipline">INTELLIGENCE × ON-CHAIN</div></div></div>
+        <button class="orbit-card cursor-interaction" type="button" data-open="experience" aria-label="Open Experience" disabled><span class="card-number">01 / PATH</span><span class="card-arrow" aria-hidden="true">↗</span><span class="card-title">Experience</span><span class="card-caption">The work behind the work.</span></button>
+        <button class="orbit-card cursor-interaction" type="button" data-open="projects" aria-label="Open Projects" disabled><span class="card-number">02 / WORK</span><span class="card-arrow" aria-hidden="true">↗</span><span class="card-title">Projects</span><span class="card-caption">From question to code.</span></button>
+        <button class="orbit-card cursor-interaction" type="button" data-open="education" aria-label="Open Education" disabled><span class="card-number">03 / STUDY</span><span class="card-arrow" aria-hidden="true">↗</span><span class="card-title">Education</span><span class="card-caption">Learning that compounds.</span></button>
+        <button class="orbit-card cursor-interaction" type="button" data-open="contact" aria-label="Open Contact" disabled><span class="card-number">04 / CONTACT</span><span class="card-arrow" aria-hidden="true">↗</span><span class="card-title">Contact</span><span class="card-caption">Start a conversation.</span></button>
+        <div class="bottom"><p class="hint"><span>↓</span> Scroll to unfold the story</p><button type="button" class="reveal-button cursor-interaction">Explore all sections ↗</button></div>
+        <div class="sr" role="status" aria-live="polite"></div>
+      </main>
+    </div>
+    <section class="story-section" id="journey-work">
+      <div class="section-overline reveal-on-scroll">03 / Selected work</div><h2 class="reveal-on-scroll">Stay for <em>the thinking.</em></h2><p class="section-intro reveal-on-scroll">Two projects at the intersection of data, intelligence, and useful interfaces. Open either one for a closer look.</p>
+      <article class="showcase reveal-on-scroll"><div><div class="section-overline">AI × Web3</div><h3>EnvioScout AI</h3><p>Blockchain data is rich. Finding an answer should be simpler. This project brings natural-language queries to multi-chain analytics.</p><div class="tech-line">React · Node.js · Gemini · HyperSync · Blockscout</div><button class="text-action cursor-interaction" type="button" data-open="projects">Explore the project ↗</button></div><div class="visual-box flow-visual"><div class="visual-caption">Project overview</div><div class="pipeline"><span><b>01</b> Ask in natural language</span><span><b>02</b> Retrieve on-chain data</span><span><b>03</b> Explain the findings</span></div><div class="visual-footer">Language → data → insight</div></div></article>
+      <article class="showcase reveal-on-scroll"><div><div class="section-overline">Machine learning</div><h3>OCT Feature Explorer</h3><p>Look beneath a model’s output. Inspect spatial features and patch attention, then compare adaptation workflows.</p><div class="tech-line">Python · DINOv2 · MLX · LoRA</div><button class="text-action cursor-interaction" type="button" data-open="projects">Explore the research workflow ↗</button></div><div class="visual-box patch-visual"><div class="visual-caption">Feature-grid illustration</div><div class="patch-grid" aria-hidden="true"></div><div class="visual-footer">Illustrative patches · not model results</div></div></article>
+    </section>
+    <section class="story-section foundations" id="journey-foundations"><div class="section-overline reveal-on-scroll">04 / Foundations</div><h2 class="reveal-on-scroll">Two disciplines.<br><em>Room to go deeper.</em></h2><p class="section-intro reveal-on-scroll">Pursuing a Bachelor of Technology at LNMIIT, Jaipur. Exploring the connections between machine learning and blockchain applications.</p><div class="foundation-grid"><article class="reveal-on-scroll"><h3>Machine intelligence</h3><p>Representation learning, feature inspection, and LLM-powered interfaces.</p><small>Explored in OCT Feature Explorer &amp; EnvioScout AI</small></article><article class="reveal-on-scroll"><h3>On-chain applications</h3><p>EVM data, multi-chain analytics, and interfaces that make blockchain information easier to use.</p><small>Explored in EnvioScout AI</small></article></div><div class="actions reveal-on-scroll"><button type="button" class="text-action cursor-interaction" data-open="education">Education ↗</button><button type="button" class="text-action cursor-interaction" data-open="experience">Experience ↗</button></div></section>
+    <section class="story-section resume-section" id="journey-resume"><div class="reveal-on-scroll"><div class="section-overline">05 / Résumé</div><h2>The essentials.<br><em>In one place.</em></h2><p class="section-intro">Education, selected projects, and a place for the next chapter.</p><div class="actions"><button type="button" class="reveal-button cursor-interaction" data-open="resume">View résumé ↗</button><button type="button" class="text-action cursor-interaction" data-open="contact">Get in touch ↗</button></div></div><div class="resume-sheet reveal-on-scroll" aria-label="Résumé preview placeholder"><div class="paper-name">Arpit<span style="color:#ae7bd8">.</span></div><div class="paper-role">AI / ML + Blockchain / Web3</div><div class="paper-label">EDUCATION</div><div class="paper-copy">Bachelor of Technology · Pursuing<br>LNMIIT, Jaipur</div><div class="paper-label">SELECTED PROJECTS</div><div class="paper-copy">EnvioScout AI<br>OCT Feature Explorer</div><div class="paper-label">EXPERIENCE</div><div class="paper-line"></div><div class="paper-line short"></div><div class="paper-copy">[Add roles and achievements]</div></div></section>
+    <footer class="footer-contact"><div class="section-overline">06 / Let's connect</div><h2>What should we build next?</h2><a href="mailto:thearpit2005@gmail.com">thearpit2005@gmail.com ↗</a><div class="social-row"><a href="https://github.com/arpitmisra" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/arpit-mishra-0a93191b7/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://x.com/0xArpitFi" target="_blank" rel="noopener noreferrer">X / Twitter ↗</a><button class="text-action cursor-interaction" type="button" data-jump="intro">Back to the start ↑</button></div><small>Arpit · AI / ML &amp; Web3</small></footer>
+  </div>
+  <div class="progress-track" aria-hidden="true"><div class="progress-fill"></div></div>
+  <dialog aria-labelledby="orbit-detail-title">
+    <header class="detail-head"><div class="detail-kicker">ARPIT / <span class="panel-name">SELECTED WORK</span></div><button type="button" class="close-panel cursor-interaction" autofocus>← Back to orbit</button></header>
+    <div class="detail-body"><h2 id="orbit-detail-title">Projects</h2><div class="detail-content"></div></div>
+  </dialog>
+  <template data-content="projects">
+    <p class="lede">Exploring machine intelligence and the data behind decentralized applications.</p>
+    <article class="project-detail"><div class="tag">AI × Web3 / EnvioScout AI</div><h3>Blockchain data, in conversation.</h3><p>A natural-language interface that connects Gemini with Envio HyperSync and Blockscout to explore data across EVM networks. Built for ETHGlobal ETHOnline 2025.</p><div class="tech">React · Node.js · Gemini · HyperSync · Blockscout</div><a href="https://github.com/arpitmisra/envioscout-ai" target="_blank" rel="noopener noreferrer">Explore source &amp; documentation ↗</a></article>
+    <article class="project-detail"><div class="tag">Machine learning / OCT Feature Explorer</div><h3>Inspecting what a vision model sees.</h3><p>DINOv2 feature extraction and an interactive patch dashboard for OCT scans, with workflows for comparing self-supervised LoRA and full fine-tuning. An exploration tool, not a validated diagnostic system.</p><div class="tech">Python · DINOv2 · MLX · LoRA</div><a href="https://github.com/arpitmisra/mini-project" target="_blank" rel="noopener noreferrer">Explore code &amp; research workflow ↗</a></article>
+  </template>
+  <template data-content="experience">
+    <p class="lede">The roles, research, and collaborations behind the work.</p>
+    <!-- EDIT: Replace bracketed text with your confirmed experience. Duplicate an article for another role. -->
+    <span class="draft-label">Draft entries · Fill in later</span>
+    <article class="project-detail"><div class="tag">Internship / industry experience</div><h3 class="placeholder">[Role title] · [Organization]</h3><div class="tech">[Start month/year] — [End month/year or Present]</div><p class="placeholder" style="margin-top:12px">[Describe what you built, your individual contribution, and the result.]</p><div class="tech">[Technologies used] · [Supporting project or reference]</div></article>
+    <article class="project-detail"><div class="tag">Research / collaboration</div><h3 class="placeholder">[Research role] · [Lab or team]</h3><div class="tech">[Start month/year] — [End month/year or Present]</div><p class="placeholder" style="margin-top:12px">[Describe the research question, your approach, and the evidence or output.]</p></article>
+    <article class="project-detail"><div class="tag">Available to explore now</div><h3>Project work</h3><p>Read about the AI / ML and blockchain projects currently available on your public GitHub.</p><button type="button" class="close-panel cursor-interaction" data-open="projects" style="margin-top:16px">View projects ↗</button></article>
+  </template>
+  <template data-content="education">
+    <p class="lede">Pursuing a Bachelor of Technology at LNMIIT, Jaipur.</p>
+    <!-- EDIT: Update specialization, expected graduation, coursework, and achievements below. -->
+    <dl class="facts"><div><dt>Institution</dt><dd>LNMIIT, Jaipur</dd></div><div><dt>Degree</dt><dd>Bachelor of Technology (B.Tech)</dd></div><div><dt>Status</dt><dd>Currently pursuing</dd></div><div><dt>Specialization</dt><dd class="placeholder">[Add branch / specialization]</dd></div><div><dt>Expected graduation</dt><dd class="placeholder">[Add graduation year]</dd></div></dl>
+    <article class="project-detail"><div class="tag">Optional details · Fill in later</div><p class="placeholder">[Add relevant coursework]</p><p class="placeholder" style="margin-top:10px">[Add academic achievements, certifications, or student leadership]</p></article>
+  </template>
+  <template data-content="contact">
+    <p class="lede">For conversations around AI / ML, blockchain, and engineering.</p>
+    <!-- EDIT: These are the public contact destinations you supplied. -->
+    <a class="contact-link" href="mailto:thearpit2005@gmail.com"><span>Email</span><span>thearpit2005@gmail.com ↗</span></a>
+    <a class="contact-link" href="https://github.com/arpitmisra" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>@arpitmisra ↗</span></a>
+    <a class="contact-link" href="https://www.linkedin.com/in/arpit-mishra-0a93191b7/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span>View profile ↗</span></a>
+    <a class="contact-link" href="https://x.com/0xArpitFi" target="_blank" rel="noopener noreferrer"><span>X / Twitter</span><span>@0xArpitFi ↗</span></a>
+    <div class="project-detail"><span class="draft-label">Optional · Fill in later</span><p class="placeholder">[Add résumé link]</p><p class="placeholder" style="margin-top:10px">[Add availability or preferred opportunities]</p></div>
+  </template>
+  <template data-content="resume"><p class="lede">A concise overview of my education and project work.</p><div class="resume-summary"></div><div class="resume-file-slot"></div></template>
+</div>
+
+<script src="resume-content.js"></script>
+<script>
+(() => {
+  const root=document.getElementById('arpit-orbit');if(!root)return;
+  const $=s=>root.querySelector(s),viewport=$('.viewport'),journey=$('.journey'),scene=$('.scene'),core=$('.core'),sculpture=$('.sculpture'),intro=$('.intro'),caption=$('.opening-caption'),chapter=$('.chapter-label'),floor=$('.floor'),fill=$('.progress-fill'),hint=$('.hint'),next=$('.reveal-button'),status=$('[role="status"]'),name=$('h1'),discipline=$('.discipline');
+  const cards=[...root.querySelectorAll('.orbit-card')],dialog=$('dialog'),title=$('#orbit-detail-title'),panelName=$('.panel-name'),content=$('.detail-content'),closeButton=$('.close-panel');
+  const pref=matchMedia('(prefers-reduced-motion: reduce)'),settings={motion:true};
+  const names={experience:'Experience',projects:'Projects',education:'Education',contact:'Contact',resume:'Résumé'};
+  const clamp=v=>Math.max(0,Math.min(1,v)),ease=v=>1-Math.pow(1-clamp(v),3);
+  let current=0,target=0,frame=0,lastTime=0,lastTrigger=null,closing=false,activePanel='',lastChapter=-1;
+  const motion=()=>settings.motion&&!pref.matches;
+  const work=$('#journey-work'),foundations=$('#journey-foundations'),resumeSection=$('#journey-resume');
+  const patchGrid=$('.patch-grid');for(let i=0;i<36;i++)patchGrid.append(document.createElement('span'));
+  const patches=[...patchGrid.children];
+  function offset(el){return el.getBoundingClientRect().top-viewport.getBoundingClientRect().top+viewport.scrollTop;}
+  function go(where){const y=where==='intro'?0:where==='orbit'?Math.max(0,journey.offsetHeight-viewport.clientHeight)*.97:where==='work'?offset(work)-74:where==='resume'?offset(resumeSection)-74:offset(foundations)-74;viewport.scrollTo({top:y,behavior:motion()?'smooth':'instant'});}
+  function paint(p){
+    const w=scene.clientWidth,mobile=w<581;
+    const sweep=clamp(p/.22),center=ease((p-.24)/.19),ring=ease((p-.43)/.12),orb=clamp((p-.55)/.4),unfold=ease(orb/.75);
+    const scale=mobile?1-.42*unfold:1-.25*unfold,coreY=mobile?-128*unfold-25*(1-center):-25*(1-center);
+    core.style.transform=`translate(-50%,calc(-50% + ${coreY}px)) scale(${scale})`;
+    const large=Math.min(220,w*.235),small=mobile?70:77;
+    name.style.fontSize=`${large+(small-large)*center}px`;name.style.letterSpacing=`${-large*.055+(large*.055-3)*center}px`;
+    const edge=-12+sweep*120;name.style.backgroundImage=`linear-gradient(90deg,#bbff72 ${edge}%,#eee8f5 ${edge+9}%)`;
+    sculpture.style.opacity=String(ring);sculpture.style.transform=`rotateZ(${-12+(motion()?orb*44:0)}deg) rotateY(${orb*12}deg) scale(${.85+.15*ring})`;
+    discipline.style.opacity=String(ring);intro.style.opacity=String(1-clamp((p-.17)/.13));intro.style.transform=`translateY(${-22*center}px)`;
+    caption.style.opacity=String(1-clamp((p-.12)/.13));chapter.style.opacity=String(clamp((p-.5)/.07));
+    floor.style.opacity=String((mobile?.3:1)*unfold);
+    const dx=mobile?w*.25-4:Math.min(282,w*.319),positions=mobile?[[-dx,52],[dx,52],[-dx,190],[dx,190]]:[[-dx,-99],[dx,-99],[-dx,110],[dx,110]];
+    cards.forEach((card,i)=>{const a=ease((orb-(.04+i*.17))/.25),[x,y]=positions[i],startY=mobile?-100:0;card.style.transform=`translate(calc(-50% + ${x*a}px),calc(-50% + ${startY+(y-startY)*a}px)) scale(${.74+.26*a}) rotate(${motion()?(1-a)*(i%2?6:-6):0}deg)`;card.style.opacity=String(clamp((a-.08)/.92));card.style.visibility=a>.01?'visible':'hidden';card.disabled=a<.92;});
+    let beat=p<.24?0:p<.55?1:2;
+    hint.innerHTML=beat===0?'<span>01 /</span> Scroll to change perspective':beat===1?'<span>02 /</span> Finding the center':orb>.93?'<span>↓</span> There’s more below':'<span>02 /</span> A story in four chapters';
+    next.textContent=p<.55?'Enter my world ↓':'Continue to the work ↓';
+    fill.style.width=`${clamp(viewport.scrollTop/Math.max(1,viewport.scrollHeight-viewport.clientHeight))*100}%`;
+    if(viewport.scrollTop>offset(work)-150)beat=3;if(viewport.scrollTop>offset(foundations)-150)beat=4;if(viewport.scrollTop>offset(resumeSection)-150)beat=5;
+    if(beat!==lastChapter){lastChapter=beat;status.textContent=['Introduction','Entering the orbit','Explore experience, projects, education and contact','Selected work','Foundations','Résumé'][beat];}
+    const vr=viewport.getBoundingClientRect();
+    root.querySelectorAll('.visual-box').forEach(box=>{const r=box.getBoundingClientRect(),v=clamp((vr.bottom-r.top)/(vr.height+r.height));box.style.setProperty('--scan',`${v*140}%`);if(box.classList.contains('patch-visual')){box.style.setProperty('--tilt',`${16-24*v}deg`);const row=Math.min(5,Math.floor(v*6));patches.forEach((cell,i)=>cell.classList.toggle('lit',Math.floor(i/6)===row||(i+row)%11===0));}});
+  }
+  function tick(now){const dt=lastTime?Math.min((now-lastTime)/1000,.06):1/60;lastTime=now;current+=(target-current)*(1-Math.exp(-dt/.07));if(Math.abs(target-current)<.0003)current=target;paint(current);if(current!==target)frame=requestAnimationFrame(tick);else{frame=0;lastTime=0;}}
+  function update(){target=motion()?clamp(viewport.scrollTop/Math.max(1,journey.offsetHeight-viewport.clientHeight)):1;if(!motion()){current=1;paint(1);return;}if(!frame)frame=requestAnimationFrame(tick);}
+  function applyMotion(){if(frame){cancelAnimationFrame(frame);frame=0;lastTime=0;}root.classList.toggle('no-motion',!motion());current=target=motion()?clamp(viewport.scrollTop/Math.max(1,journey.offsetHeight-viewport.clientHeight)):1;paint(current);}
+  viewport.addEventListener('scroll',update,{passive:true});next.addEventListener('click',()=>{go(current<.55?'orbit':'work');});new ResizeObserver(update).observe(scene);pref.addEventListener('change',applyMotion);
+  const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('shown');}),{root:viewport,threshold:.12});root.querySelectorAll('.reveal-on-scroll').forEach(el=>observer.observe(el));
+
+  const defaultSummary='Arpit\nAI / ML + Blockchain / Web3\n\nEDUCATION\nBachelor of Technology — Currently pursuing\nLNMIIT, Jaipur\n[Branch / specialization] · [Expected graduation year]\n\nSELECTED PROJECTS\nEnvioScout AI — Natural-language blockchain analytics\nOCT Feature Explorer — DINOv2 features and patch inspection\n\nEXPERIENCE\n[Role] · [Organization] · [Dates]\n[Your contribution and verified outcome]\n\nCONTACT\nthearpit2005@gmail.com\ngithub.com/arpitmisra';
+  const resumeSummary=window.PORTFOLIO_RESUME?.summary||defaultSummary;
+  const resumeUrl=window.PORTFOLIO_RESUME?.url||'';
+  function fillResume(){
+    const summary=content.querySelector('.resume-summary'),slot=content.querySelector('.resume-file-slot');
+    summary.textContent=resumeSummary;
+    slot.replaceChildren();
+    if(resumeUrl){const a=document.createElement('a');a.href=resumeUrl;a.target='_blank';a.rel='noopener noreferrer';a.className='text-action';a.textContent='Open résumé PDF ↗';slot.append(a);}
+    else {const p=document.createElement('p');p.className='resume-notice';p.textContent='Résumé PDF coming soon. For enquiries: thearpit2005@gmail.com';slot.append(p);}
+  }
+  function openPanel(key,trigger){if(!names[key])return;const template=root.querySelector(`template[data-content="${key}"]`);if(!template)return;const wasOpen=dialog.open;activePanel=key;title.textContent=names[key];panelName.textContent=names[key].toUpperCase();content.replaceChildren(template.content.cloneNode(true));if(key==='resume')fillResume();if(!wasOpen){lastTrigger=trigger;dialog.showModal();}else closeButton.focus();dialog.scrollTop=0;if(motion())dialog.animate([{opacity:0,transform:'translateY(15px) scale(.97)'},{opacity:1,transform:'translateY(0) scale(1)'}],{duration:420,easing:'cubic-bezier(.16,1,.3,1)'});}
+  async function closePanel(){if(closing||!dialog.open)return;closing=true;if(motion())await dialog.animate([{opacity:1,transform:'scale(1)'},{opacity:0,transform:'scale(.98)'}],{duration:150,easing:'ease-in'}).finished.catch(()=>{});dialog.close();closing=false;activePanel='';if(lastTrigger?.isConnected)lastTrigger.focus();}
+  root.addEventListener('click',event=>{const open=event.target.closest('[data-open]'),jump=event.target.closest('[data-jump]');if(open&&!open.disabled)openPanel(open.dataset.open,open);if(jump){go(jump.dataset.jump);}});
+  closeButton.addEventListener('click',closePanel);dialog.addEventListener('cancel',event=>{event.preventDefault();closePanel();});dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)closePanel();});
+  applyMotion();})();
+</script>
+</body></html>
